@@ -1,0 +1,108 @@
+.skills {
+    margin-top: 180px;
+}
+.skills__nav {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.skills__nav li {
+    border: 2px solid var(--secondary);
+    padding: 5px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.skills__nav .active {
+    background: var(--secondary);
+    color: black;
+}
+
+.skills__nav li:not(:last-child) {
+    margin-right: 15px;
+}
+
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 30px);
+}
+
+.card {
+    background: var(--simple-secondary);
+    padding: 25px 25px 35px;
+    position: relative;
+    border-radius: 4px;
+    margin: 15px;
+}
+
+.skill > :nth-child(2n - 1) {
+    margin-left: 0px !important;
+}
+
+.skill > :nth-child(2n) {
+    margin-right: 0px !important;
+}
+
+.skill > :first-child,
+.skill > :nth-child(2) {
+    margin-top: 0;
+}
+.skill > :last-child {
+    margin-right: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 15px);
+}
+
+.card h4 {
+    margin: 0;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+.card p {
+    margin: 0;
+    background: var(--secondary);
+    width: fit-content;
+    color: black;
+    padding: 3px 6px;
+    font-weight: 600;
+    font-size: 16px;
+    position: absolute;
+    border-radius: 4px;
+    right: 25px;
+    top: 25px;
+}
+
+.progressBar {
+    width: 80%;
+    background: var(--secondary);
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 0 0 30px;
+    }
+    .skill {
+        flex-direction: column;
+    }
+    .skills__nav {
+        justify-content: center;
+    }
+    .card h4 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,65 @@
+:root {
+  --primary: #264653;
+  --secondary: #00f5d4;
+  --simple-secondary: #1e3b46;
+}
+/* :root {
+  --primary:#232B2B ;
+  --secondary:#DC3D24 ;
+  --simple-secondary: #4C3327;
+} */
+
+
+html,
+body {
+  background-color: var(--primary);
+  color: white;
+  /* color: #030e12; */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 540px) {
+  button {
+    padding: 10px 15px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 320px) {
+  html,
+  body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
