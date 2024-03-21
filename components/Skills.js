@@ -40,6 +40,7 @@ const Skills = () => {
           <Card name="Firebase" percent={70} />
           <Card name="Data Entry" percent={70} />
           <Card name="Lead Generation" percent={70} />
+          <Card name="Email Marketing " percent={70} />
         </div>
       )}
 
